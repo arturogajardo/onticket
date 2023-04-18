@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<main class="container py-5">
+    <section id="event"  class="card card-body">
+        <h1 class="display-1 text-center">Eventos disponibles</h1>
+    </section>
+    <div id="cardevent1" class="row my-4 text-center">
+        <h3>Eventos</h3>
+        <p>Aca podras ver todos los eventos disponibles!!
+           Para adquirir un ticket presiona el boton "Detalles del evento" 
+        </p>
+        {% for event in events %}
+        <div class="col-md-4 p-4">
+          <div id="cardevent1" class="card bg-black card-project">
+            <img id="eventimg" src="{{ event.image.url }}" class="card-img-top" />
+            <div class="card-body">
+              <h2>{{ event.title }}</h2>
+              <p>{{ event.description }}</p>
+              {% if event.url %}
+              <a href="{{event.url}}" type="button" class="btn btn-secondary" target="__blank" rel="noreferrer">Detalles del evento</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+</main>
+{% endblock %}

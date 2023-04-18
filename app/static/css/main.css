@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family:'Lato', sans-serif;
+    font-weight: normal;
+    margin:0;
+  }
+
+body{
+  background-image: url('/static/fondo.jpg');
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.navbar{
+  background-color: #060707;
+  font-size: larger;
+  color: #ffffff;
+  background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+}
+
+.navbar #logo{
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-style: oblique;
+}
+
+.navbar a{
+  color: aliceblue;
+}
+
+.navbar a:hover{
+  color: rgb(180, 68, 60);
+}
+
+#home{
+    border-radius: 10px;
+    background-color: #030303;
+    color: aliceblue;
+    
+  }
+#home h1{
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+
+#footer{
+    color: aliceblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  }
+.footer #getconnected{
+    color: aliceblue;
+  }
+
+#event{
+    color: aliceblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  }
+
+#cardevent1{
+    background-color: #030303;
+    color: aliceblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  }
+
+#cardevent2{
+    background-color: #030303;
+    color: aliceblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  }
+#eventimg{
+    border-radius: 40px;
+    border-top: 40px;
+  }
+
+#contact{
+    color: aliceblue;
+    background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  }
+
+#about{
+  margin: 100px;
+  background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  color: aliceblue;
+  }
+
+#signin{
+  background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  color: aliceblue;
+  }
+
+#signup{
+  background: linear-gradient(rgb(0, 0, 0), rgb(197, 82, 101));
+  color: aliceblue;
+}
+
+
+

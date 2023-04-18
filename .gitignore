@@ -1,0 +1,5 @@
+media
+
+**/___pycache__/**
+
+venv

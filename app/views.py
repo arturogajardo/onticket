@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from .models import Event
+from .forms import EventForm
 
 # Create your views here.
 
@@ -59,6 +60,14 @@ def signout(request):
 def events(request):
     events = Event.objects.all()
     return render(request, "events.html", {"events": events})
+
+def create_event(request):
+    if request.POST:
+        form = EventForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            redirect('events')
+    return render(request, "create_event.html", {"form": EventForm})
 
 def cart(request):
     return render(request, "cart.html")

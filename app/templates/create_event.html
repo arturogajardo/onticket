@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %} {% block content %}
+
+<main class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <h1>Create Event</h1>
+
+      <form action="{% url 'create_event' %}" method="POST" enctype="multipart/form-data" class="card card-body">
+        {% csrf_token %}
+        
+        {{form.errors}}
+
+        {{form}}
+
+        <button type="submit" class="btn btn-dark">
+            Save
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
